@@ -1,0 +1,29 @@
+### Find all students
+GET localhost:9000/students
+Accept: application/json
+
+### Find a student
+GET localhost:9000/students/1
+Accept: application/json
+
+### Create a new student
+POST localhost:9000/students
+Content-Type: application/json
+
+{
+   "name": "sammidev",
+   "email": "sammidev@gmail.com",
+   "ukt" : "1"
+}
+
+### Update a student
+PUT localhost:9000/students/1
+Content-Type: application/json
+
+{
+   "name": "sammidev up",
+   "email": "sammidev up@gmail.com",
+}
+
+### Delete a student
+DELETE localhost:9000/students/1
